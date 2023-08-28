@@ -1,0 +1,96 @@
+/*? General Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* This changes the rem sizing to 10px*/
+}
+
+
+.container {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+
+    background-color: #181b19;
+}
+
+/*? Calculator Buttons*/
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    min-height: 100vh;
+    width: 40rem;
+
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(12rem, auto)repeat(5, 100px);
+    /* minmax is basically saying that the row will always be a minimum of 120px but have a maximum of auto meaning that it will fill the remaining space */
+
+    /* gap: 20px;
+    padding: 20px; */
+}
+
+.calculator-grid button {
+    cursor: pointer;
+    font-size: 2rem;
+    /* border: 1px solid #181b19; */
+    outline: none;
+    background-color: #242b2b;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.calculator-grid button:hover {
+    background-color: #181b19;
+    color: #fff;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+/*? Outputs */
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    padding: 2rem;
+
+    grid-column: 1/-1;
+    background-color: rgba(255, 255, 255, 0.76);
+
+    color: black;
+
+    word-wrap: break-word;
+    word-break: break-all;
+    /* word-wrap and word-break will break the word if its too long in the middle and move it to the next line */
+}
+
+.previous-operand {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(24, 27, 25, 0.75);
+}
+
+.current-operand {
+    font-size: 5rem;
+    font-weight: 700;
+    color: black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!--! CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--! Javascript -->
+    <script src="script.js" defer></script>
+    <!-- defer means that script loads AFTER the page -->
+
+    <!--! Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator-grid">
+        <div class="output">
+          <div id="calc-previous-operand" class="previous-operand">1231243</div>
+          <div id="calc-current-operand" class="current-operand">234234234</div>
+        </div>
+        <button id="calc-AC" class="span-two">AC</button>
+        <button id="calc-delete">DEL</button>
+        <button id="calc-operation">÷</button>
+        <button id="calc-number">1</button>
+        <button id="calc-number">2</button>
+        <button id="calc-number">3</button>
+        <button id="calc-operation">*</button>
+        <button id="calc-number">4</button>
+        <button id="calc-number">5</button>
+        <button id="calc-number">6</button>
+        <button id="calc-operation">+</button>
+        <button id="calc-number">7</button>
+        <button id="calc-number">8</button>
+        <button id="calc-number">9</button>
+        <button id="calc-operation">-</button>
+        <button id="calc-number">.</button>
+        <button id="calc-number">0</button>
+        <button id="calc-equals" class="span-two">=</button>
+      </div>
+    </div>
+  </body>
+</html>
